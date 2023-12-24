@@ -26,7 +26,9 @@ class HomeController extends Controller
             }
         }
     }
-
+    public function homepage(){
+        return view('home.homepage');
+    }
     /**
      * Show the form for creating a new resource.
      */
