@@ -29,6 +29,13 @@
       <!-- Sidebar Navigation end-->
 
       <div class="page-content">
+        @if(session()->has('message'))
+        <div class="alert alert-message">
+            <button type="button" class="close"
+            data-dismiss="alert" aria-hidden="true">x</button>
+            {{session()->get('message')}}
+        </div>
+        @endif
         <h1 class="post_title">Add Post</h1>
         <div>
             <form action="{{url('add_post')}}" method="POST" enctype="multipart/form-data">
