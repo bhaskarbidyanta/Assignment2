@@ -14,14 +14,22 @@
                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
                    <a class="nav-link " href="blog.html">Blog</a>
                 </li>
-                <li class="nav-item">
-                   <a class="nav-link " href="contact.html">Contact</a>
-                </li>
+                @if(Route::has('login'))
+
+             @auth
+             <li>
+                <x-app-layout>
+
+                </x-app-layout>
+               </li>
+
+             @else
+             <li class="nav-item"><a class="nav-link" href="{{route('login')}}">Login</a></li>
+             <li class="nav-item"><a class="nav-link" href="{{route('register')}}">Register</a></li>
+             @endauth
+             @endif
              </ul>
           </div>
        </nav>
@@ -32,9 +40,23 @@
           <ul>
              <li class="active"><a href="index.html">Home</a></li>
              <li><a href="about.html">About</a></li>
-             <li><a href="services.html">Services</a></li>
              <li><a href="blog.html">Blog</a></li>
-             <li><a href="contact.html">Contact us</a></li>
+
+             @if(Route::has('login'))
+
+             @auth
+             <li>
+             <x-app-layout>
+
+             </x-app-layout>
+            </li>
+
+             @else
+             <li><a href="{{route('login')}}">Login</a></li>
+             <li><a href="{{route('register')}}">Register</a></li>
+             @endauth
+             @endif
+
           </ul>
        </div>
     </div>
