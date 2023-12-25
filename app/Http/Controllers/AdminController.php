@@ -35,4 +35,8 @@ class AdminController extends Controller
         $post->save();
         return redirect()->back()->with('message','Post Added Successfully');
     }
+    public function show_post(){
+        $post=Post::all();
+        return view('admin.show_post',compact('post'));
+    }
 }
