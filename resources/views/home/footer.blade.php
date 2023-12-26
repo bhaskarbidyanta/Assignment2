@@ -8,14 +8,13 @@
           <div class="call_text"><img src="images/call-icon.png"></div>
           <div class="call_text"><a href="#">Call +01 1234567890</a></div>
           <div class="call_text"><img src="images/mail-icon.png"></div>
-          <div class="call_text"><a href="#">demo@gmail.com</a></div>
+          <div class="call_text"><a href="#">bhaskar.bid18@gmail.com</a></div>
+          <div class="call_text"><a href="#">bidyantabs@rknec.edu</a></div>
        </div>
        <div class="social_icon">
           <ul>
-             <li><a href="#"><img src="images/fb-icon.png"></a></li>
-             <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-             <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-             <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+             <li><a href="https://www.linkedin.com/in/bhaskarbidyanta/"><img src="images/linkedin-icon.png"></a></li>
+             <li><a href="https://www.instagram.com/bhaskar_bidyanta/?next=%2F"><img src="images/instagram-icon.png"></a></li>
           </ul>
        </div>
     </div>
@@ -24,7 +23,7 @@
  <!-- copyright section start -->
  <div class="copyright_section">
     <div class="container">
-       <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+       <p class="copyright_text">2023 &copy; All Rights Reserved. Design by <a href="https://html.design">Bhaskar Bidyanta</a></p>
     </div>
  </div>
  <!-- copyright section end -->

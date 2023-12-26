@@ -1,5 +1,5 @@
 <div class="header_main">
-    <Sdiv class="mobile_menu">
+    <div class="mobile_menu">
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
              <ul class="navbar-nav">
                 <li class="nav-item">
-                   <a class="nav-link" href="index.html">Home</a>
+                   <!--<a class="nav-link" href="index.html">Home</a>-->
                 </li>
                 <li class="nav-item">
                    <a class="nav-link" href="about.html">About</a>
@@ -35,12 +35,12 @@
        </nav>
     </div>
     <div class="container-fluid">
-       <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+       <div class="logo"><a href="#"><h1 style="color: white;"><b>Bhaskar's Blogging World</b></h1></a></div>
        <div class="menu_main">
           <ul>
-             <li class="active"><a href="index.html">Home</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a href="blog.html">Blog</a></li>
+             <!--<li class="active"><a href="index.html">Home</a></li>-->
+             <!--<li><a href="about.html">About</a></li>
+             <li><a href="blog.html">Blog</a></li>-->
 
              @if(Route::has('login'))
 
