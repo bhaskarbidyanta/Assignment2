@@ -27,10 +27,19 @@
       <!-- header section start -->
       <div class="header_section">
          @include('home.header');
+         @if(session()->has('message'))
+        <div class="alert alert-success text-green-500">
+            <button type="button" class="close bg-white"
+            data-dismiss="alert" aria-hidden="true" >x</button>
+            {{session()->get('message')}}
+        </div>
+        @endif
       </div>
 
 
+
         <div class="div_deg">
+
             <h3 class="title_deg">Add Post</h3>
             <form action="{{url('user_post')}}" method="POST" enctype="multipart/form-data">
                 @csrf

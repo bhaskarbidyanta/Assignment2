@@ -68,7 +68,7 @@ class HomeController extends Controller
         }
 
         $post->save();
-        return redirect()->back();
+        return redirect()->back()->with('message','Post Created Successfully');
     }
 
     /**
