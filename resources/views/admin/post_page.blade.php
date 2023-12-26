@@ -15,7 +15,7 @@
             text-align:center;
             padding:30px;
        }
-       .label{
+       label{
             display:inline-block;
             width:200px;
        }
