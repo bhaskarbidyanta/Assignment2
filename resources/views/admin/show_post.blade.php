@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/
+    sweetalert.min.js"></script>
     @include('admin.css')
     <style type="text/css">
+    /*https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js*/
         .title_deg{
             font-size:30px;
             font-weight:bold;
@@ -55,6 +58,7 @@
                     <th>UserType</th>
                     <th>Image</th>
                     <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
                 @foreach($post as $post)
                 <tr>
@@ -67,13 +71,42 @@
                         <img class="img_deg" src="postimage/{{$post->image}}">
                     </td>
                     <td>
-                        <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger" onclick="return confirm('Are You sure to Delete this?')">Delete</a>
+                        <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger"
+                        onclick="return confirm('Are you sure to delete this Post?')">Delete</a>
+                    </td>
+                    <td>
+                        <a href="{{url('edit_page',$post->id)}}" class="btn
+                        btn-success">Edit</a>
                     </td>
                 </tr>
                 @endforeach
             </table>
         </div>
         @include('admin.footer')
+        <script type ="text/javascript">
+
+            /*function confirmation(event){
+                event.preventDefault();
+                var urlToRedirect=event.currentTarget.getAttribute('href');
+                console.log(urlToRedirect);
+
+                swal({
+                    title:"Are you sure to Delete this Post",
+                    text:"You won't be able to revert this deletion",
+                    icon:"warning",
+                    buttons:true,
+                    dangerMode:true,
+                })
+
+                .then((willCancel)=>
+                {
+                    if(willCancel){
+                        window.location.href=urlToRedirect;
+                    }
+
+                });
+            }*/
+        </script>
   </body>
 </html>
 
