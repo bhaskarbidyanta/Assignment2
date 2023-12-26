@@ -30,7 +30,7 @@
 
       <div class="page-content">
         @if(session()->has('message'))
-        <div class="alert alert-danger text-green-500">
+        <div class="alert alert-success text-green-500">
             <button type="button" class="close bg-white"
             data-dismiss="alert" aria-hidden="true" >x</button>
             {{session()->get('message')}}
