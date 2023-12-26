@@ -8,10 +8,10 @@
             @foreach($post as $post)
 
              <div class="col-md-4">
-                <div><img src="/postimage/{{$post->image}}" class="services_img"></div>
+                <div><img style="margin-bottom:20px;height:200px"width="350px" src="/postimage/{{$post->image}}" class="services_img"></div>
                 <h4>{{$post->title}}</h4>
                     <p>Post by <b>{{$post->name}}</b></p>
-                <div class="btn_main"><a href="#">Read More</a></div>
+                <div class="btn_main"><a href="{{url('post_details',$post->id)}}">Read More</a></div>
              </div>
 
              @endforeach
