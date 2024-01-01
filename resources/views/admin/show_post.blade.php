@@ -81,7 +81,7 @@
                         btn-success">Edit</a>
                     </td>
                     <td>
-                        <a onclick="return confirm('Are you sure to accept this post?') href="{{url('accept_post',$post->id)}}" class="btn btn-outline-secondary">Accept</a>
+                        <a onclick="return confirm('Are you sure to accept this post?')" href="{{url('accept_post',$post->id)}}" class="btn btn-outline-secondary">Accept</a>
                     </td>
                     <td>
                         <a onclick="return confirm('Are you sure to reject this post?')" href="{{url('reject_post',$post->id)}}" class="btn btn-primary" >Reject</a>

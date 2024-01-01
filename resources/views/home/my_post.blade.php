@@ -2,16 +2,18 @@
 <html lang="en">
    <head>
       <!-- basic -->
-        @include('home.homecss');
+
         <style type="text/css">
             .post_deg{
                 padding:30px;
                 text-align:center;
+                background-color: black;
             }
             .title_deg{
                 font-size:30px;
                 font-weight:bold;
                 padding:15px;
+                color:white;
             }
             .des_deg{
                 font-size:18px;
@@ -25,11 +27,17 @@
                 margin:auto;
             }
         </style>
+        @include('home.homecss');
+
+
+
+
    </head>
    <body>
       <!-- header section start -->
       <div class="header_section">
          @include('home.header');
+
 
         @if(session()->has('message'))
             <div class="alert alert-success">

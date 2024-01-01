@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <!-- basic -->
-<meta charset="utf-8">
+      <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- mobile metas -->
@@ -32,11 +32,15 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <style type="text/css">
-
-        .container-fluid{
-            position:relative;
-            z-index:1;
-        }
-    </style>
-    </head>
+         .container-fluid {
+            position: relative;
+            z-index: 1;
+         }
+      </style>
+   </head>
+   <!-- Your content goes here within the body tag -->
+   <body>
+      <!-- Example content: -->
+      <h1>Welcome to Bhaskar's Blogging World!</h1>
+   </body>
 </html>
